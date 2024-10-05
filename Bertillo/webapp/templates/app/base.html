@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %} ">
+</head>
+<body>
+
+<header>
+
+    <a href="{% url 'home' %}" > home </a>
+    <a href="{% url 'about' %}" > about </a>
+
+
+</header>
+
+{% block content %}
+<p>gerod</p>
+{% endblock content %}
+
+
+</body>
+</html>
